@@ -1,22 +1,22 @@
 export const boreholeImage = [
     {
         name: "Borehole Drilling",
-        image: "/../public/boreholeone.png",
+        image: "/boreholeone.png",
         id:1
     },
     {
         name: "Borehole Drilling",
-        image: "/../public/borehole.png",
+        image: "/borehole.png",
         id:2
     },
     {
         name: "Borehole Drilling",
-        image: "/../public/boreholewater.jpeg",
+        image: "/boreholewater.jpeg",
         id:3
     },
     {
         name: "Borehole Drilling",
-        image: "/../public/boreholetwo.jpeg",
+        image: "/boreholetwo.jpeg",
         id:4
     },
 ]
@@ -24,114 +24,114 @@ export const boreholeImage = [
 export const swimmingPoolsImage = [
     {
         name: "Swimming pool",
-        image: "/../public/swimmingone.png",
+        image: "/swimmingone.png",
         id:1
     },
     {
         name: "Swimming pool",
-        image: "/../public/swimmingtwo.png",
+        image: "/swimmingtwo.png",
         id:2
     },
 ]
 export const pressureControlsImage = [
     {
         name: "pressure controller",
-        image: "/../public/pressureone.jpeg",
+        image: "/pressureone.jpeg",
         id:1
     },
     {
         name: "pressure controller",
-        image: "/../public/pressurethree.jpeg",
+        image: "/pressurethree.jpeg",
         id:1
     },
     {
         name: "pressure controller",
-        image: "/../public/pressuretwo.jpeg",
+        image: "/pressuretwo.jpeg",
         id:2
     },
 ]
 export const surfaceMachinesImage = [
     {
         name: "Surface pressure pump",
-        image: "/../public/machineone.jpeg",
+        image: "/machineone.jpeg",
         id:1
     },
     {
         name: "Surface pressure pump",
-        image: "/../public/machinetwo.jpeg",
+        image: "/machinetwo.jpeg",
         id: 2
     },
     {
         name: "Surface pressure pump",
-        image: "/../public/machinethree.png",
+        image: "/machinethree.png",
         id:3
     },
     {
         name: "Surface pressure pump",
-        image: "/../public/machinefour.png",
+        image: "/machinefour.png",
         id: 4
     },
     {
         name: "Surface pressure pump",
-        image: "/../public/machinefive.jpeg",
+        image: "/machinefive.jpeg",
         id: 5
     },
 ]
 export const verticalMachinesImage = [
     {
         name: "Vertical submersible pump",
-        image: "/../public/verticalone.png",
+        image: "/verticalone.png",
         id:1
     },
     {
         name: "Vertical submersible pump",
-        image: "/../public/waterrepairone.png",
+        image: "/waterrepairone.png",
         id: 2
     },
 ]
 export const submersibleImage = [
     {
         name: "Submersible pump",
-        image: "/../public/submersiblefour.jpeg",
+        image: "/submersiblefour.jpeg",
         id:1
     },
     {
         name: "Submersible pump",
-        image: "/../public/submersibleone.png",
+        image: "/submersibleone.png",
         id: 2
     },
     {
         name: "Submersible pump",
-        image: "/../public/submersibletwo.jpeg",
+        image: "/submersibletwo.jpeg",
         id: 3
     },
     {
         name: "Submersible pump",
-        image: "/../public/submersiblethree.jpeg",
+        image: "/submersiblethree.jpeg",
         id: 4
     },
 ]
 export const sewageMachinesImage = [
     {
         name: "Sewage pumping machine",
-        image: "/../public/swimmingeone.png",
+        image: "/swimmingeone.png",
         id:1
     },
     {
         name: "Sewage pumping machine",
-        image: "/../public/swimmingtwo.png",
+        image: "/swimmingtwo.png",
         id:2
     },
 ]
 export const fatingImage = [
     {
         name: "Farting pumping machine",
-        image: "/../public/fartingone.jpg",
+        image: "/fartingone.jpg",
         id:1
     },
     {
         name: "Farting pumping machine",
-        image: "/../public/fartingtwo.png",
+        image: "/fartingtwo.png",
         id:2
     },
 ]
@@ -139,22 +139,22 @@ export const fatingImage = [
 export const maintainceImage = [
     {
         name: "Pool maintenance",
-        image: "/../public/swimmingthree.jpeg",
+        image: "/swimmingthree.jpeg",
         id: 1
     },
     {
         name: "Pool maintenance",
-        image: "/../public/swimmingfour.jpeg",
+        image: "/swimmingfour.jpeg",
         id: 2
     },
     {
         name: "borehole maintenance",
-        image: "/../public/repairone.png",
+        image: "/repairone.png",
         id: 3
     },
     {
         name: "borehole maintenance",
-        image: "/../public/repairtwo.jpeg",
+        image: "/repairtwo.jpeg",
         id: 4
     },
 ]
@@ -162,17 +162,17 @@ export const maintainceImage = [
 export const poolMachineImage = [
     {
         name: "Pool Machine",
-        image: "/../public/poolpumpone.jpeg",
+        image: "/poolpumpone.jpeg",
         id: 1
     },
     {
         name: "Pool Machine",
-        image: "/../public/poolpumptwo.jpeg",
+        image: "/poolpumptwo.jpeg",
         id: 2
     },
     {
         name: "Pool Machine",
-        image: "/../public/poolpumpthree.jpeg",
+        image: "/poolpumpthree.jpeg",
         id: 3
     }
 ]
@@ -180,17 +180,17 @@ export const poolMachineImage = [
 export const generatorMachineImage = [
     {
         name: "Generator water Machine",
-        image: "/../public/generator.png",
+        image: "/generator.png",
         id: 1
     },
     {
         name: "Generator water Machine",
-        image: "/../public/generatorthree.jpeg",
+        image: "/generatorthree.jpeg",
         id: 2
     },
     {
         name: "Generator water Machine",
-        image: "/../public/generatortwo.jpeg",
+        image: "/generatortwo.jpeg",
         id: 3
     }
 ]
@@ -198,27 +198,27 @@ export const generatorMachineImage = [
 export const differentMachineImage = [
     {
         name: "Submersible pump",
-        image: "/../public/submersiblefour.jpeg",
+        image: "/submersiblefour.jpeg",
         id: 1
     },
     {
         name: "Surface pressure pump",
-        image: "/../public/machinetwo.jpeg",
+        image: "/machinetwo.jpeg",
         id: 2
     },
     {
         name: "pressure controller",
-        image: "/../public/pressureone.jpeg",
+        image: "/pressureone.jpeg",
         id: 3
     },
     {
         name: "Pool Machine",
-        image: "/../public/poolpumpone.jpeg",
+        image: "/poolpumpone.jpeg",
         id: 4
     },
     {
         name: "Farting pumping machine",
-        image: "/../public/fartingone.jpg",
+        image: "/fartingone.jpg",
         id: 5
     },
 ]
