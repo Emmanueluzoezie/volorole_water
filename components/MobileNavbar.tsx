@@ -8,13 +8,11 @@ const MobileNavbar = () => {
     const { showContactsForNav, setShowContactsForNav } = useContextState()
 
   return (
-      <div className='px-4' style={{ backgroundColor: appColor.secondaryBgColor }}>
-        <ul className='text-center pb-2'>
-            <li className='p-2 border-b-[3px]'>Find solution</li>
-            <li className='p-2 border-b-[3px]'>Find solution</li>
-              <li className='p-2 border-4' onClick={() => setShowContactsForNav(!showContactsForNav)}>
-                <div className='flex items-center'>
-                    <h2 className='w-full' >Contact us</h2>
+      <div className='' style={{ backgroundColor: appColor.secondaryBgColor }}>
+          <ul className='pb-2 px-4 font-semibold'>
+              <li className={`p-2 cursor-pointer border-[#4c661a] ${showContactsForNav ? "" : "hover:border-b-2 border-[#4c661a]"}}`} onClick={() => setShowContactsForNav(!showContactsForNav)}>
+                <div className='flex items-center justify-between'>
+                    <h2 className='w-full' >Service</h2>
                     {showContactsForNav ?
                         <MdArrowDropUp className='text-4xl' />
                         :
@@ -22,19 +20,30 @@ const MobileNavbar = () => {
                     }
                 </div>
                 {showContactsForNav &&
-                <div className='pt-3'>
-                    <Link className='' href="https://wa.me/+2349121271988">
-                        <button className='p-2 px-[20px] border-4 w-full' >Call</button>
+                <div className=' pl-[60px] capitalize'>
+                    <Link className={``} href="">
+                        <h2 className={`hover_item w-fit hover:border-b-2 py-3`}>Borehole Drilling</h2>
                     </Link>
-                    <Link href="https://wa.me/+2349121271988">
-                        <button className='p-2 px-[20px] border-4 w-full' >Message on Whatsapp</button>
+                    <Link className={``} href="">
+                        <h2 className={`hover_item w-fit hover:border-b-2 py-3`}>Water machines</h2>
                     </Link>
-                    <Link href="https://wa.me/+2349121271988">
-                        <button className='p-2 px-[20px] border-4 w-full' >Send a mail</button>
+                    <Link className={``} href="">
+                        <h2 className={`hover_item w-fit hover:border-b-2 py-3`}>swimming pool construction </h2>
+                    </Link>
+                    <Link className={``} href="">
+                        <h2 className={`hover_item w-fit hover:border-b-2 py-3`}>Water farting</h2>
+                    </Link>
+                    <Link className={``} href="">
+                        <h2 className={`hover_item w-fit hover:border-b-2 py-3`}>Water Treatment</h2>
+                    </Link>
+                    <Link className={``} href="">
+                        <h2 className={`hover_item w-fit hover:border-b-2 py-3`}>Repairs & Maintenance</h2>
                     </Link>
                 </div>
                 }
             </li>
+            <li className='p-2 cursor-pointer border-[#4c661a] hover:border-b-2'>Contact us</li>
+            <li className='p-2 cursor-pointer border-[#4c661a] hover:border-b-2'>About us</li>
         </ul>
       </div>
   )

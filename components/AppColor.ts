@@ -1,4 +1,5 @@
 export const appColor =  {
-    primaryBgColor: "#a8eb36",
-    secondaryBgColor: "#f5f5f5"
+    primaryBgColor: "#4c661a",
+    secondaryBgColor: "#f5f5f5",
+    lightPrimaryColor: "#e4e8de"
 }

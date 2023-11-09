@@ -1,37 +1,54 @@
 import Link from 'next/link'
 import React, { useState } from 'react'
 import { appColor } from './AppColor'
-import { MdArrowDropDown, MdArrowDropUp, MdClose, MdMenu } from "react-icons/md"
+import { MdArrowDropDown, MdArrowDropUp, MdClose, MdMenu, MdWaterDrop } from "react-icons/md"
 import {  } from "react-icons/fa"
 import { useContextState } from '../context/AppContext'
 
 const Navbar = () => {
-    const [hoveredItem, setHoveredItem] = useState("");
-    const {showMenu, setShowMenu, } = useContextState()
+    const [hoveredItem, setHoveredItem] = useState(false);
+    const { showMenu, setShowMenu, setShowContactsForNav, showContactsForNav } = useContextState()
 
+    const closeNavbar = () => {
+        if (showContactsForNav){
+            setShowContactsForNav(false)
+            setShowMenu(false)
+        }
+        else{
+            setShowMenu(false)
+        }
+    }
 
     const handleMouseEnter = (item:string) => {
-        setHoveredItem(item);
+        setHoveredItem(true);
     };
 
     const handleMouseLeave = () => {
-        setHoveredItem("");
+        setHoveredItem(false);
     };
 
   return (
-    <header className='border-2 sticky top-0 px-4' style={{backgroundColor: appColor.secondaryBgColor}}>
+    <header className='border-2 z-50 sticky top-0 px-4' style={{backgroundColor: appColor.secondaryBgColor}}>
           <nav className='flex items-center justify-between max-w-[1300px] mx-auto'>
               <Link href="/">
-                  logo
+                  <div className='flex items-center'>
+                    <div className='w-[50px] h-[50px] flex items-center rounded-full' style={{backgroundColor: appColor.primaryBgColor}}>
+                        <MdWaterDrop className='text-white ml-1 text-[28px]'/>
+                    </div>
+                    <div className='flex items-center ml-[-24px]' style={{color: appColor.primaryBgColor}}>
+                        <h1 className='text-[32px] font-extrabold text-white'>V</h1>
+                        <h3 className='pt-1 font-extrabold'>OLOROLE</h3>
+                    </div>
+                  </div>
               </Link>
 
-              <ul className='flex items-center space-x-4'>
-                  <li className='hidden md:block relative py-[16px] md:py-[20px]'
+              <ul className='flex items-center space-x-8 py-4 md:py-0'>
+                  <li className='hidden md:block hover_item font-semibold hover:font-bold relative py-[16px] md:py-[20px]'
                       onMouseEnter={() => handleMouseEnter("contact us")}
                       onMouseLeave={handleMouseLeave}>
                         <div className='flex cursor-pointer'>
-                            <h2 className='hidden md:flex px-[10px]' style={{ backgroundColor: appColor.primaryBgColor }} 
-                                >Contact us</h2>
+                            <h2 className='hidden md:flex px-[10px]' 
+                                >Service</h2>
                             {hoveredItem ?
                                 <MdArrowDropUp className='text-2xl' />
                                 :
@@ -39,26 +56,37 @@ const Navbar = () => {
                             }
                         </div>
 
-                      {hoveredItem === "contact us" &&
-                            <div className='absolute top-[50px] left-[-60%] right-[-50%] w-fit' style={{ backgroundColor: appColor.secondaryBgColor}}>
+                      {hoveredItem &&
+                            <div className='capitalize absolute top-[50px] font-semibold left-[-200%] right-[-10%] w-[300px]' style={{ backgroundColor: appColor.secondaryBgColor}}>
                               <div className='p-3'>
-                                  <Link className='' href="https://wa.me/+2349121271988">
-                                      <button className='p-2 px-[20px] border-4 w-full' >Call</button>
+                                  <Link className='' href="/">
+                                      <button className='p-2 px-[20px] border-b-2 w-full hover_item hover:font-bold' >Borehole Drilling</button>
                                   </Link>
                                   <Link href="https://wa.me/+2349121271988">
-                                      <button className='p-2 px-[20px] border-4 w-full' >Message on Whatsapp</button>
+                                      <button className='p-2 px-[20px] border-b-2 w-full hover_item hover:font-bold' >Water machines</button>
                                   </Link>
                                   <Link href="https://wa.me/+2349121271988">
-                                      <button className='p-2 px-[20px] border-4 w-full' >Send a mail</button>
+                                      <button className='p-2 px-[20px] border-b-2 w-full hover_item hover:font-bold' >swimming pool construction</button>
+                                  </Link>
+                                  <Link href="https://wa.me/+2349121271988">
+                                      <button className='p-2 px-[20px] border-b-2 w-full hover_item hover:font-bold' >Water Treatment</button>
+                                  </Link>
+                                  <Link href="https://wa.me/+2349121271988">
+                                      <button className='p-2 px-[20px] border-b-2 w-full hover_item hover:font-bold' >Water farting</button>
+                                  </Link>
+                                  <Link href="https://wa.me/+2349121271988">
+                                      <button className='p-2 px-[20px] border-b-2 w-full hover_item hover:font-bold' >Repairs & Maintenance</button>
                                   </Link>
                               </div>
                             </div>
                         }
                   </li>
+                  <li className='hover_item font-semibold hover:font-bold cursor-pointer hidden md:block'>Contact us</li>
+                  <li className='hover_item font-semibold hover:font-bold cursor-pointer hidden md:block'>About us</li>
 
-                <div className='xl:hidden text-3xl cursor-pointer'>
+                <div className='md:hidden text-3xl cursor-pointer'>
                     {showMenu?
-                        <MdClose onClick={() => setShowMenu(false)}/>
+                        <MdClose onClick={closeNavbar}/>
                         :
                         <MdMenu onClick={() => setShowMenu(true)} />
                     }

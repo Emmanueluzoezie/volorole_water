@@ -5,4 +5,10 @@
     .page_body {
         scroll-behavior: smooth;
     }
+    .hover_item {
+    }
+    .hover_item:hover{
+        color: #4c661a;
+        border-color: #4c661a;
+    }
 }

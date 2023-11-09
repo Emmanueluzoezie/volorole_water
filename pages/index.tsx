@@ -6,6 +6,10 @@ import Navbar from '../components/Navbar'
 import { FirstComponent } from '../components/FirstComponent'
 import { useContextState } from '../context/AppContext'
 import MobileNavbar from '../components/MobileNavbar'
+import ServiceComponent from '../components/ServiceComponent'
+import Footer from '../components/Footer'
+import SecondHomeComponent from '../components/SecondHomeComponent'
+import { HomeArticleComponent } from '../components/HomeArticleComponent'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,9 +28,13 @@ export default function Home() {
       <div className='page_body'>
         <Navbar />
         {showMenu && 
-          <div className='fixed w-full lg:hidden'><MobileNavbar /></div>
+          <div className='fixed z-50 w-full md:hidden'><MobileNavbar /></div>
         }
         <FirstComponent />
+        <SecondHomeComponent />
+        <ServiceComponent />
+        <HomeArticleComponent />
+        <Footer />
       </div>
     </>
   )
