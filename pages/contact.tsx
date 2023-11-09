@@ -10,10 +10,10 @@ const Contact = () => {
     return (
         <>
             <Head>
-                <title>Volorole/Contact</title>
+                <title>Volorole</title>
                 <meta name="description" content="Volorole website" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="../public/volorolelogos.png" />
             </Head>
 
             <div className='page_body'>
