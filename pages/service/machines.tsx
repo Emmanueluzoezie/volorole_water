@@ -4,7 +4,7 @@ import MobileNavbar from '../../components/MobileNavbar'
 import Navbar from '../../components/Navbar'
 import { useContextState } from '../../context/AppContext'
 
-export const Machines = () => {
+export default function Machines() {
     const { showMenu } = useContextState()
 
     return (

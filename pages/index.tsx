@@ -1,7 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '../styles/Home.module.css'
 import Navbar from '../components/Navbar'
 import { FirstComponent } from '../components/FirstComponent'
 import { useContextState } from '../context/AppContext'
@@ -10,8 +7,6 @@ import ServiceComponent from '../components/ServiceComponent'
 import Footer from '../components/Footer'
 import SecondHomeComponent from '../components/SecondHomeComponent'
 import { HomeArticleComponent } from '../components/HomeArticleComponent'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   const { showMenu } = useContextState()

@@ -11,4 +11,8 @@
         color: #4c661a;
         border-color: #4c661a;
     }
+    .footer_item:hover {
+        color: #4c661a;
+        text-decoration: underline;
+    }
 }
