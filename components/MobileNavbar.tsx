@@ -1,11 +1,18 @@
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import React from 'react'
 import { MdArrowDropDown, MdArrowDropUp } from 'react-icons/md'
 import { useContextState } from '../context/AppContext'
 import { appColor } from './AppColor'
 
 const MobileNavbar = () => {
-    const { showContactsForNav, setShowContactsForNav } = useContextState()
+    const { showContactsForNav, setShowContactsForNav, setShowMenu } = useContextState()
+    const router = useRouter()
+
+    const handleLink =() => {
+        setShowMenu(false)
+        router.push("#team")
+    }
 
   return (
       <div className='' style={{ backgroundColor: appColor.secondaryBgColor }}>
@@ -42,6 +49,7 @@ const MobileNavbar = () => {
                 </div>
                 }
             </li>
+            <li onClick={handleLink} className='p-2 cursor-pointer border-[#4c661a] hover:border-b-2'>Team</li>
             <li className='p-2 cursor-pointer border-[#4c661a] hover:border-b-2'>Contact us</li>
             <li className='p-2 cursor-pointer border-[#4c661a] hover:border-b-2'>About us</li>
         </ul>

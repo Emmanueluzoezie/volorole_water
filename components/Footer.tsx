@@ -15,8 +15,8 @@ const Footer = () => {
           <h3 className='pt-1 font-extrabold text-[14px]'>OLOROLE</h3>
         </div>
       </div>
-      <div className='md:flex flex-wrap justify-center items-start'>
-        <div className='md:w-[300px] md:my-6 md:-mt-0'>
+      <div className='flex flex-wrap justify-center items-start'>
+        <div className='w-[50%] md:w-[300px] my-6 mt-4 md:-mt-0'>
           <h1 className='font-[500] text-[17px] '>Pages</h1>
           <div className='mt-1 pl-2'>
             <Link href="/" className='block text-[16px] footer_item'>Home</Link>
@@ -25,7 +25,7 @@ const Footer = () => {
             <Link href="/contact" className='block text-[16px] footer_item'>Contact</Link>
           </div>
         </div>
-        <div className='mt-4 md:mt-0 md:w-[300px] md:my-6'>
+        <div className='mt-4 md:mt-0 w-[50%] md:w-[300px] my-6'>
           <h1 className='font-[500] text-[17px]'>Services</h1>
           <div className='mt-1 pl-2'>
             <Link href="/service/borehole" className='block text-[16px] footer_item'>Borehole Drilling</Link>
@@ -36,14 +36,14 @@ const Footer = () => {
             <Link href="/service/solutions" className='block text-[16px] footer_item'>Water problem</Link>
           </div>
         </div>
-        <div className='mt-4 md:mt-0 md:w-[300px] md:my-6'>
+        <div className='mt-4 md:mt-0 w-[50%] md:w-[300px] my-6'>
           <h1 className='font-[500] text-[17px]'>Support</h1>
           <div className='mt-1 pl-2'>
             <Link href="/faq" className='block text-[16px] footer_item'>FAQs</Link>
             <Link href="/service/pools" className='block text-[16px] footer_item'>Email</Link>
           </div>
         </div>
-        <div className='mt-4 md:mt-0 md:w-[300px] md:my-6'>
+        <div className='mt-4 md:mt-0 w-[50%] md:w-[300px] my-6'>
           <h1 className='font-[500] text-[17px]'>Socails</h1>
           <div className='mt-1 pl-2'>
             <Link href="https://wa.me/+2349121271988" className='block text-[16px] footer_item'>WhatsApp</Link>

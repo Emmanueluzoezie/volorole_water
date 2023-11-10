@@ -29,7 +29,7 @@ const SecondHomeComponent = () => {
                   >
                       {boreholeImage.map((image: any) => (
                           <SwiperSlide key={image.id}>
-                              <div className='relative w-full h-[300px] lg:h-[400px]'>
+                              <div className='relative w-full h-[300px]'>
                                   <Image src={image.image} alt="" layout='fill' objectFit='cover' />
                               </div>
                           </SwiperSlide>

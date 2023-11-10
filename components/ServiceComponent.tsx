@@ -6,7 +6,7 @@ const ServiceComponent = () => {
   return (
     <div id='service' className=' px-4'>
         <div className='pt-[28px] flex justify-center'>
-            <h2 className='text-[30px] font-bold md:text-[40px]'>Our services</h2>
+            <h2 className='text-[26px] font-bold md:text-[40px]'>Our services</h2>
         </div>
         <div className='md:flex flex-wrap justify-center'>
           <ServiceItem images={boreholeImage} title="Borehole Drilling" description="Unlocking the Depths of Clean Water: We specialize in drilling exceptional boreholes to quench your water needs. Our dedication to quality and expertise ensures a reliable source of pure, crystal-clear water for your home or business." />

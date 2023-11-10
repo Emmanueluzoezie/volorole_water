@@ -11,9 +11,9 @@ import Image from 'next/image';
 export const HomeArticleComponent = () => {
   return (
       <div className='p-4 md:p-10 bg-[#e4e8de] mt-[30px]'>
-        <div className='flex items-center'>
+        <div className='flex items-center max-w-[1200px] mx-auto'>
             <div className='flex-[0.4] sm:flex-1 border-[1px]' style={{borderColor: appColor.primaryBgColor}}/>
-            <h2 className='flex-1 lg:flex-[0.6] text-center font-semibold px-[2px] md:text-[24px] lg:text-[26px]'>Features and benefits</h2>
+              <h2 className='flex-1 lg:flex-[0.6] text-center font-semibold px-[2px] text-[20px] md:text-[24px] lg:text-[26px]'>Features and benefits</h2>
                 <div className='flex-[0.4] sm:flex-1 m border-[1px]' style={{borderColor: appColor.primaryBgColor}}/>
         </div>
           <div className='lg:flex justify-center items-center lg:mt-10'>
@@ -113,8 +113,8 @@ export const HomeArticleComponent = () => {
                       </div>
                   </div>
               </div>
-              <div className='flex justify-center mt-10 lg:mt-0 lg:ml-10'>
-                  <div className="w-full md:w-[500px] lg:w-[400px]">
+              <div className='flex justify-center mt-10 lg:mt-0 lg:ml-32'>
+                  <div className="w-full md:w-[500px]">
                       <Swiper
                           spaceBetween={30}
                           centeredSlides={true}

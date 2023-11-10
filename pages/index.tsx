@@ -7,6 +7,7 @@ import ServiceComponent from '../components/ServiceComponent'
 import Footer from '../components/Footer'
 import SecondHomeComponent from '../components/SecondHomeComponent'
 import { HomeArticleComponent } from '../components/HomeArticleComponent'
+import TeamComponent from '../components/TeamComponent'
 
 export default function Home() {
   const { showMenu } = useContextState()
@@ -29,6 +30,7 @@ export default function Home() {
         <SecondHomeComponent />
         <ServiceComponent />
         <HomeArticleComponent />
+        <TeamComponent />
         <Footer />
       </div>
     </>

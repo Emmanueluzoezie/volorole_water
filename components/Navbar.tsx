@@ -4,10 +4,17 @@ import { appColor } from './AppColor'
 import { MdArrowDropDown, MdArrowDropUp, MdClose, MdMenu, MdWaterDrop } from "react-icons/md"
 import {  } from "react-icons/fa"
 import { useContextState } from '../context/AppContext'
+import { useRouter } from 'next/router'
 
 const Navbar = () => {
     const [hoveredItem, setHoveredItem] = useState(false);
     const { showMenu, setShowMenu, setShowContactsForNav, showContactsForNav } = useContextState()
+    const router = useRouter()
+
+    const handleLink = () => {
+        setShowMenu(false)
+        router.push("#team")
+    }
 
     const closeNavbar = () => {
         if (showContactsForNav){
@@ -81,6 +88,7 @@ const Navbar = () => {
                             </div>
                         }
                   </li>
+                  <li className='hover_item font-semibold hover:font-bold cursor-pointer hidden md:block' onClick={handleLink}>Team</li>
                   <li className='hover_item font-semibold hover:font-bold cursor-pointer hidden md:block'>Contact us</li>
                   <li className='hover_item font-semibold hover:font-bold cursor-pointer hidden md:block'>About us</li>
 
