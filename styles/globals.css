@@ -15,4 +15,10 @@
         color: #4c661a;
         text-decoration: underline;
     }
+    .highlight {
+        background-color: #4c661a;
+        color: #fff;
+        padding: 2px 7px;
+        border-radius: 5px;
+    }
 }

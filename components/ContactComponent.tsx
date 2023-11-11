@@ -36,7 +36,7 @@ const ContactComponent = () => {
                 </div>
                 <div className='my-4'>
                     <div className='my-2'>
-                        <h2 className='font-[600] text-[16px] md:text-[20px]'>Chat with us on WhatsApp</h2>
+                        <h2 className='font-[600] text-[16px] md:text-[20px]'>Chat with us on WhatsApp:</h2>
                         <Link href="https://wa.me/+2349137436972">
                             <div className="flex items-center space-x-1">
                                 <MdWhatsapp className='text-[20px] md:text-[26px]' style={{ color: appColor.primaryBgColor }} />
@@ -47,7 +47,7 @@ const ContactComponent = () => {
                 </div>
                 <div className='my-4'>
                     <div className='my-2'>
-                        <h2 className='font-[600] text-[16px] md:text-[20px]'>Send us Mail</h2>
+                        <h2 className='font-[600] text-[16px] md:text-[20px]'>Send us Mail:</h2>
                         <Link href="mailto:support@volorole.com">
                             <div className="flex items-center space-x-1">
                                 <MdEmail className='text-[20px] md:text-[26px]' style={{ color: appColor.primaryBgColor }} />
