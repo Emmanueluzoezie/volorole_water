@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import React from 'react'
+import ContactComponent from '../components/ContactComponent'
+import Footer from '../components/Footer'
 import MobileNavbar from '../components/MobileNavbar'
 import Navbar from '../components/Navbar'
 import { useContextState } from '../context/AppContext'
@@ -21,7 +23,8 @@ const Contact = () => {
                 {showMenu &&
                     <div className='fixed z-50 w-full md:hidden'><MobileNavbar /></div>
                 }
-                <div>Contact us</div>
+                <ContactComponent />
+                <Footer />
             </div>
         </>
     )

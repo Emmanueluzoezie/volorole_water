@@ -5,8 +5,8 @@ interface IstateContext {
     setShowMenu: Dispatch<SetStateAction<boolean>>
     showContacts: boolean
     setShowContacts: Dispatch<SetStateAction<boolean>>
-    showContactsForNav: boolean
-    setShowContactsForNav: Dispatch<SetStateAction<boolean>>
+    showMoreServiceNav: boolean
+    setShowMoreServiceNav: Dispatch<SetStateAction<boolean>>
 }
 
 const initialState = {
@@ -14,8 +14,8 @@ const initialState = {
     setShowMenu: () => false,
     showContacts: false,
     setShowContacts: () => false,
-    showContactsForNav: false,
-    setShowContactsForNav: () => false,
+    showMoreServiceNav: false,
+    setShowMoreServiceNav: () => false,
 }
 
 const StateContext = createContext<IstateContext>(initialState)
@@ -27,10 +27,10 @@ interface Childern {
 export const ContextProvider: React.FC<Childern> = ({ children }) => {
     const [showMenu, setShowMenu] = useState<boolean>(false)
     const [showContacts, setShowContacts] = useState<boolean>(false)
-    const [showContactsForNav, setShowContactsForNav] = useState<boolean>(false)
+    const [showMoreServiceNav, setShowMoreServiceNav] = useState<boolean>(false)
 
     return (
-        <StateContext.Provider value={{ showMenu, setShowMenu, showContacts, setShowContacts, showContactsForNav, setShowContactsForNav  }}>
+        <StateContext.Provider value={{ showMenu, setShowMenu, showContacts, setShowContacts, showMoreServiceNav, setShowMoreServiceNav  }}>
     { children }
     </StateContext.Provider>
     )

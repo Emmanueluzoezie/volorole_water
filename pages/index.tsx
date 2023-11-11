@@ -5,9 +5,9 @@ import { useContextState } from '../context/AppContext'
 import MobileNavbar from '../components/MobileNavbar'
 import ServiceComponent from '../components/ServiceComponent'
 import Footer from '../components/Footer'
-import SecondHomeComponent from '../components/SecondHomeComponent'
 import { HomeArticleComponent } from '../components/HomeArticleComponent'
 import TeamComponent from '../components/TeamComponent'
+import MissionComponent from '../components/MissionComponent'
 
 export default function Home() {
   const { showMenu } = useContextState()
@@ -27,7 +27,7 @@ export default function Home() {
           <div className='fixed z-50 w-full md:hidden'><MobileNavbar /></div>
         }
         <FirstComponent />
-        <SecondHomeComponent />
+        <MissionComponent />
         <ServiceComponent />
         <HomeArticleComponent />
         <TeamComponent />

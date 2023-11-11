@@ -8,17 +8,17 @@ import { useRouter } from 'next/router'
 
 const Navbar = () => {
     const [hoveredItem, setHoveredItem] = useState(false);
-    const { showMenu, setShowMenu, setShowContactsForNav, showContactsForNav } = useContextState()
+    const { showMenu, setShowMenu, setShowMoreServiceNav, showMoreServiceNav } = useContextState()
     const router = useRouter()
 
-    const handleLink = () => {
+    const handleLink = (clicked: string) => {
         setShowMenu(false)
-        router.push("#team")
+        router.push(clicked)
     }
 
     const closeNavbar = () => {
-        if (showContactsForNav){
-            setShowContactsForNav(false)
+        if (showMoreServiceNav){
+            setShowMoreServiceNav(false)
             setShowMenu(false)
         }
         else{
@@ -88,9 +88,9 @@ const Navbar = () => {
                             </div>
                         }
                   </li>
-                  <li className='hover_item font-semibold hover:font-bold cursor-pointer hidden md:block' onClick={handleLink}>Team</li>
-                  <li className='hover_item font-semibold hover:font-bold cursor-pointer hidden md:block'>Contact us</li>
-                  <li className='hover_item font-semibold hover:font-bold cursor-pointer hidden md:block'>About us</li>
+                  <li className='hover_item font-semibold hover:font-bold cursor-pointer hidden md:block' onClick={() => handleLink("#team")}>Team</li>
+                  <li className='hover_item font-semibold hover:font-bold cursor-pointer hidden md:block' onClick={() => handleLink("/contact") }>Contact us</li>
+                  <li className='hover_item font-semibold hover:font-bold cursor-pointer hidden md:block' onClick={() => handleLink("/about") }>About us</li>
 
                 <div className='md:hidden text-3xl cursor-pointer'>
                     {showMenu?

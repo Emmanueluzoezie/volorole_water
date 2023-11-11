@@ -18,7 +18,7 @@ const Footer = () => {
       <div className='flex flex-wrap justify-center items-start'>
         <div className='w-[50%] md:w-[300px] my-6 mt-4 md:-mt-0'>
           <h1 className='font-[500] text-[17px] '>Pages</h1>
-          <div className='mt-1 pl-2'>
+          <div className='mt-1'>
             <Link href="/" className='block text-[16px] footer_item'>Home</Link>
             <Link href="/service/services" className='block text-[16px] footer_item'>Services</Link>
             <Link href="/about" className='block text-[16px] footer_item'>About</Link>
@@ -27,7 +27,7 @@ const Footer = () => {
         </div>
         <div className='mt-4 md:mt-0 w-[50%] md:w-[300px] my-6'>
           <h1 className='font-[500] text-[17px]'>Services</h1>
-          <div className='mt-1 pl-2'>
+          <div className='mt-1'>
             <Link href="/service/borehole" className='block text-[16px] footer_item'>Borehole Drilling</Link>
             <Link href="/service/pools" className='block text-[16px] footer_item'>Pool Construction</Link>
             <Link href="/service/machines" className='block text-[16px] footer_item'>Water Machines</Link>
@@ -38,18 +38,19 @@ const Footer = () => {
         </div>
         <div className='mt-4 md:mt-0 w-[50%] md:w-[300px] my-6'>
           <h1 className='font-[500] text-[17px]'>Support</h1>
-          <div className='mt-1 pl-2'>
+          <div className='mt-1'>
             <Link href="/faq" className='block text-[16px] footer_item'>FAQs</Link>
             <Link href="/service/pools" className='block text-[16px] footer_item'>Email</Link>
           </div>
         </div>
         <div className='mt-4 md:mt-0 w-[50%] md:w-[300px] my-6'>
           <h1 className='font-[500] text-[17px]'>Socails</h1>
-          <div className='mt-1 pl-2'>
-            <Link href="https://wa.me/+2349121271988" className='block text-[16px] footer_item'>WhatsApp</Link>
+          <div className='mt-1'>
+            <Link href="https://wa.me/+2349137436972" className='block text-[16px] footer_item'>WhatsApp</Link>
           </div>
         </div>
       </div>
+      <h2 className='font-[600] mt-6 text-center'>©2023 Volorole Water Solutions</h2>
     </div>
   )
 }

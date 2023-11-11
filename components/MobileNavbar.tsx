@@ -6,27 +6,30 @@ import { useContextState } from '../context/AppContext'
 import { appColor } from './AppColor'
 
 const MobileNavbar = () => {
-    const { showContactsForNav, setShowContactsForNav, setShowMenu } = useContextState()
+    const { showMoreServiceNav, setShowMoreServiceNav, setShowMenu } = useContextState()
     const router = useRouter()
 
-    const handleLink =() => {
+    const handleLink =(click: string) => {
+        if (showMoreServiceNav){
+            setShowMoreServiceNav(false)
+        }
         setShowMenu(false)
-        router.push("#team")
+        router.push(click)
     }
 
   return (
       <div className='' style={{ backgroundColor: appColor.secondaryBgColor }}>
           <ul className='pb-2 px-4 font-semibold'>
-              <li className={`p-2 cursor-pointer border-[#4c661a] ${showContactsForNav ? "" : "hover:border-b-2 border-[#4c661a]"}}`} onClick={() => setShowContactsForNav(!showContactsForNav)}>
+              <li className={`p-2 cursor-pointer border-[#4c661a] ${showMoreServiceNav ? "" : "hover:border-b-2 border-[#4c661a]"}}`} onClick={() => setShowMoreServiceNav(!showMoreServiceNav)}>
                 <div className='flex items-center justify-between'>
                     <h2 className='w-full' >Service</h2>
-                    {showContactsForNav ?
+                      {showMoreServiceNav ?
                         <MdArrowDropUp className='text-4xl' />
                         :
                         <MdArrowDropDown className='text-4xl' />
                     }
                 </div>
-                {showContactsForNav &&
+                  {showMoreServiceNav &&
                 <div className=' pl-[60px] capitalize'>
                     <Link className={``} href="">
                         <h2 className={`hover_item w-fit hover:border-b-2 py-3`}>Borehole Drilling</h2>
@@ -49,9 +52,9 @@ const MobileNavbar = () => {
                 </div>
                 }
             </li>
-            <li onClick={handleLink} className='p-2 cursor-pointer border-[#4c661a] hover:border-b-2'>Team</li>
-            <li className='p-2 cursor-pointer border-[#4c661a] hover:border-b-2'>Contact us</li>
-            <li className='p-2 cursor-pointer border-[#4c661a] hover:border-b-2'>About us</li>
+            <li onClick={() => handleLink("#team")} className='p-2 cursor-pointer border-[#4c661a] hover:border-b-2'>Team</li>
+            <li onClick={() => handleLink("/contact")} className='p-2 cursor-pointer border-[#4c661a] hover:border-b-2'>Contact us</li>
+            <li onClick={() => handleLink("/about")} className='p-2 cursor-pointer border-[#4c661a] hover:border-b-2'>About us</li>
         </ul>
       </div>
   )

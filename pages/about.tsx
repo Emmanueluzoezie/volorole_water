@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import React from 'react'
+import AboutComponent from '../components/AboutComponent'
+import Footer from '../components/Footer'
 import MobileNavbar from '../components/MobileNavbar'
 import Navbar from '../components/Navbar'
 import { useContextState } from '../context/AppContext'
@@ -21,7 +23,8 @@ const About = () => {
                 {showMenu &&
                     <div className='fixed z-50 w-full md:hidden'><MobileNavbar /></div>
                 }
-                <div>ABout</div>
+                <AboutComponent />
+                <Footer />
             </div>
         </>
     )

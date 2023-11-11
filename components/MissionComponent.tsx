@@ -8,7 +8,7 @@ import Image from 'next/image';
 import { boreholeImage } from '../utilies/imageData';
 import { appColor } from './AppColor';
 
-const SecondHomeComponent = () => {
+const MissionComponent = () => {
   return (
     <div className=' p-[20px] py-10 md:py-32' style={{backgroundColor: appColor.lightPrimaryColor}}>
         <div className='max-w-[1150px] mx-auto md:flex items-center md:space-x-5'>
@@ -41,4 +41,4 @@ const SecondHomeComponent = () => {
   )
 }
 
-export default SecondHomeComponent
+export default MissionComponent
