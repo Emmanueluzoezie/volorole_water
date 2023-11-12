@@ -7,6 +7,9 @@ interface IstateContext {
     setShowContacts: Dispatch<SetStateAction<boolean>>
     showMoreServiceNav: boolean
     setShowMoreServiceNav: Dispatch<SetStateAction<boolean>>
+    machineType: string
+    setMachineType: Dispatch<SetStateAction<string>>
+    
 }
 
 const initialState = {
@@ -16,6 +19,8 @@ const initialState = {
     setShowContacts: () => false,
     showMoreServiceNav: false,
     setShowMoreServiceNav: () => false,
+    machineType: "All machines",
+    setMachineType: () => "",
 }
 
 const StateContext = createContext<IstateContext>(initialState)
@@ -28,9 +33,10 @@ export const ContextProvider: React.FC<Childern> = ({ children }) => {
     const [showMenu, setShowMenu] = useState<boolean>(false)
     const [showContacts, setShowContacts] = useState<boolean>(false)
     const [showMoreServiceNav, setShowMoreServiceNav] = useState<boolean>(false)
+    const [machineType, setMachineType] = useState<string>("All machines")
 
     return (
-        <StateContext.Provider value={{ showMenu, setShowMenu, showContacts, setShowContacts, showMoreServiceNav, setShowMoreServiceNav  }}>
+        <StateContext.Provider value={{ showMenu, setShowMenu, showContacts, setShowContacts, showMoreServiceNav, setShowMoreServiceNav, machineType, setMachineType  }}>
     { children }
     </StateContext.Provider>
     )

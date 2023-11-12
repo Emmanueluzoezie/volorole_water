@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import React from 'react'
+import Footer from '../../components/Footer'
+import MachinesComponent from '../../components/MachinesComponent'
 import MobileNavbar from '../../components/MobileNavbar'
 import Navbar from '../../components/Navbar'
 import { useContextState } from '../../context/AppContext'
@@ -21,7 +23,8 @@ export default function Machines() {
                 {showMenu &&
                     <div className='fixed z-50 w-full md:hidden'><MobileNavbar /></div>
                 }
-                <div>Machines</div>
+                <MachinesComponent />
+                <Footer />
             </div>
         </>
     )

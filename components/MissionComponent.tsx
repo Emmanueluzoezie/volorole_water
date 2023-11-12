@@ -21,7 +21,7 @@ const MissionComponent = () => {
                   <ul>
                       <li className='py-2'><span className="highlight">Expertise:</span> Our team is comprised of industry experts who excel in fixing water machines, drilling boreholes, and constructing stunning swimming pools.</li>
                       <li className='py-2'><span className="highlight">Quality Assurance:</span> We take pride in our commitment to providing nothing but the best. Our services are synonymous with quality and reliability.</li>
-                      <li className='py-2'><span className="highlight">Quality Water machines:</span>Experience the pinnacle of performance with our premium machines, meticulously crafted for lasting quality and unparalleled reliability.</li>
+                      <li className='py-2'><span className="highlight">Quality Water machines:</span>Experience the pinnacle of performance with our quality machines, meticulously crafted for lasting quality and unparalleled reliability.</li>
                       <li className='py-2'><span className="highlight">Comprehensive Solutions:</span> Whether you need a quick repair, a borehole for sustainable water access, or a beautifully crafted swimming pool, Volorole Water Solutions has you covered.</li>
                   </ul>
             </div>

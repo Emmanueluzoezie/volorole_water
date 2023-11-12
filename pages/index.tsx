@@ -27,8 +27,8 @@ export default function Home() {
           <div className='fixed z-50 w-full md:hidden'><MobileNavbar /></div>
         }
         <FirstComponent />
-        <MissionComponent />
         <ServiceComponent />
+        <MissionComponent />
         <HomeArticleComponent />
         <TeamComponent />
         <Footer />
