@@ -2,9 +2,10 @@ import Head from 'next/head'
 import React from 'react'
 import MobileNavbar from '../../components/MobileNavbar'
 import Navbar from '../../components/Navbar'
+import PoolAndTreatmentComponent from '../../components/PoolAndTreatmentComponent'
 import { useContextState } from '../../context/AppContext'
 
-const Pools = () => {
+const PoolAndTreatment = () => {
     const { showMenu } = useContextState()
 
     return (
@@ -21,10 +22,13 @@ const Pools = () => {
                 {showMenu &&
                     <div className='fixed z-50 w-full md:hidden'><MobileNavbar /></div>
                 }
-                <div>Borehole</div>
+                <div className='pt-4'>
+                    <PoolAndTreatmentComponent />
+                </div>
+                <div>PoolAndTreatment</div>
             </div>
         </>
     )
 }
 
-export default Pools
+export default PoolAndTreatment

@@ -13,6 +13,7 @@ const MobileNavbar = () => {
         if (showMoreServiceNav){
             setShowMoreServiceNav(false)
         }
+        setShowMoreServiceNav(false)
         setShowMenu(false)
         router.push(click)
     }
@@ -38,12 +39,12 @@ const MobileNavbar = () => {
                     <Link href="/service/machines">
                         <h2 className={`hover_item w-fit hover:border-b-2 py-3`}>Water machines</h2>
                     </Link>
-                    <Link href="">
-                        <h2 className={`hover_item w-fit hover:border-b-2 py-3`}>swimming pool construction </h2>
+                          <Link href="/service/pools&treatment">
+                        <h2 className={`hover_item w-fit hover:border-b-2 py-3`}>Pool construction & water treatment</h2>
                     </Link>
-                    <Link href="">
+                    {/* <Link href="">
                         <h2 className={`hover_item w-fit hover:border-b-2 py-3`}>Water farting construction</h2>
-                    </Link>
+                    </Link> */}
                     <Link href="">
                         <h2 className={`hover_item w-fit hover:border-b-2 py-3`}>Water Treatment</h2>
                     </Link>

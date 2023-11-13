@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { FaCaretDown, FaSortDown, FaSortUp } from 'react-icons/fa'
 import { MdArrowDropUp, MdArrowDropDown } from 'react-icons/md'
 import { useContextState } from '../context/AppContext'
@@ -8,7 +8,7 @@ import ServiceComponent from './ServiceComponent'
 import SingleMachine from './SingleMachine'
 
 const MachinesComponent = () => {
-    const [showMachineType, SetShowMachineType] = useState(true)
+    const [showMachineType, SetShowMachineType] = useState(false)
     const {machineType, setMachineType} = useContextState()
 
     const handleMachineTypeList = (click: string) => {

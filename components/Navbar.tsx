@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { appColor } from './AppColor'
 import { MdArrowDropDown, MdArrowDropUp, MdClose, MdMenu, MdWaterDrop } from "react-icons/md"
 import {  } from "react-icons/fa"
@@ -33,6 +33,11 @@ const Navbar = () => {
     const handleMouseLeave = () => {
         setHoveredItem(false);
     };
+
+
+    useEffect(() => {
+        setShowMenu(false)
+    }, [])
 
   return (
     <header className='border-2 z-50 sticky top-0 px-4' style={{backgroundColor: appColor.secondaryBgColor}}>

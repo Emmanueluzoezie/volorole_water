@@ -21,4 +21,16 @@
         padding: 2px 7px;
         border-radius: 5px;
     }
+    .video-container {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        padding-bottom: 71%; /* This is to maintain a 7:5 aspect ratio (500 / 700 * 100) */
+        }
+
+        .responsive-video {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
 }
